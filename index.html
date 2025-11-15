@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>JS-Script IDE</title>
+		
+		<link href="styles/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header id="menu">
+			<span>
+				JS-Script IDE   <span style="font-size:12px;">by Mykyta Polishyk</span>
+			</span>
+		</header>
+		<main>
+			<div id="work_area">
+				<div class="box" id="input_box">
+					<span>
+						Input
+					</span>
+					<textarea class="area" id="input_area" cols=40 rows=20 placeholder="write code here"></textarea>
+				</div>
+				<div class="box" id="output_box">
+					<span>
+						Output
+					</span>
+					<textarea readonly class="area" id="output_area" cols=40 rows=20>
+		
+					</textarea>
+				</div>
+				<button id="launch_button">Launch</button>
+			</div>
+		</main>
+		<script src="ide.js"></script>
+	</body>
+</html>

@@ -1,0 +1,166 @@
+.output_area{
+	resize: none;
+}
+
+.input_area{
+	resize: none;
+}
+
+main{
+	display:flex;
+	flex-direction:row;
+}
+
+.box{
+	width: 50%;
+}
+
+.box .area{
+	resize: none;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", Consolas, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+#menu {
+    background-color: #222;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#file_popup {
+    position: relative;
+}
+
+#file_button {
+    background: transparent;
+    color: #f0f0f0;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.3rem 0.7rem;
+    transition: 0.2s;
+}
+
+#file_button:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 4px;
+}
+
+#file_popup_elements {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: none;
+    flex-direction: column;
+    min-width: 120px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+#file_popup_elements button {
+    background: none;
+    border: none;
+    padding: 0.6rem 1rem;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+#file_popup_elements button:hover {
+    background-color: #f0f0f0;
+}
+
+
+#file_popup:hover #file_popup_elements {
+    display: flex;
+}
+
+
+#work_area {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    padding: 0.8rem;
+}
+
+.box span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.area {
+    flex: 1;
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 0.6rem;
+    background-color: #fafafa;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.area:focus {
+    outline: none;
+    border-color: #0078d7;
+    background-color: #fff;
+}
+
+
+#launch_button {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#launch_button:hover {
+    background-color: #005fa3;
+    transform: translateY(-1px);
+}
